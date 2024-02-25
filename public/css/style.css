@@ -123,3 +123,21 @@ h3{
     width: 80vh;
     
   }
+  @media (max-width: 785px) {
+
+    .review-row{
+        
+        display: flex;
+        flex-direction: row;
+    }
+    .review-row .card{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+   }

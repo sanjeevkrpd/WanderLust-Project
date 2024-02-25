@@ -25,13 +25,13 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, ("views")));
 
 
-const DB_URL = process.env.ATLASDB_URL;
+ const DB_URL = process.env.ATLASDB_URL;
 
 app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 
-
+// const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 app.engine("ejs", ejsMate);
 main()
     .then((res) => {
