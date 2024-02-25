@@ -30,7 +30,7 @@ module.exports.showListings = async (req, res) => {
         req.flash("error","Listings You'r Requested For Does't Exits !");
         res.redirect("/listings");
     }
-    console.log(data);
+   
     res.render("listings/show.ejs", { data });
 };
 
@@ -90,7 +90,7 @@ module.exports.updateListing = async (req, res) => {
         }
 
         const savedListing = await listing.save();
-        console.log(savedListing);
+        
 
         req.flash("success", "Listing Updated.");
         res.redirect(`/listings/${id}`);

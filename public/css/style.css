@@ -30,6 +30,21 @@ h3{
 }
 
 /* Footer */
+
+@media (max-width: 780px) {
+    .col-8 {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .offset-sm-0 {
+      margin-left: 0;
+    }
+    .listing-card{
+        width: 100% !important;
+    }
+  }
+
 .f-info{
     display: flex;
     flex-direction: column;
@@ -39,14 +54,17 @@ h3{
     height: 8rem;
     margin-top: 3rem;
     row-gap: 15px;
+    
 }
 .f-info-socials{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #222222;
+    margin-bottom: 5px;
 }
-.f-info-socials i{
+.f-info-socials a{
+    color: #222222;
     margin-right: 1rem;
     font-size: 1.5rem;
 }
