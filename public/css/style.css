@@ -169,23 +169,25 @@ h3{
 }
 .line-1,.line-2,.line-3{
     display: inline-flex;
-    justify-content: space-evenly;
+    
 }
 .line-1{
     width: 40%;
+    justify-content: space-evenly;
 }
 .line-2{
     width: 40%;
+    justify-content: space-evenly;
 }
 .line-3{
     flex: 1;
 }
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 750px) {
 
     .line-1,.line-2{
         
-        width: 100%;
+        width: 80%;
    }
    .small-size{
         flex-shrink: 1 !important;
