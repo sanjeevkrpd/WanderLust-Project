@@ -250,7 +250,7 @@
             .line-1,
             .line-2 {
 
-                width: 58%;
+                width: 104%;
             }
 
             .line-3 {
@@ -276,13 +276,13 @@
             }
 
             .line-1 {
-                width: 56%;
+                width: 104%;
                 justify-content: space-evenly;
             }
 
             .box {
                 flex-shrink: 1;
                 padding: 15px;
-                margin-left: 64px;
+                margin-left: -5px;
             }
         }
